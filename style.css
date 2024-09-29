@@ -1,0 +1,437 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+*::selection {
+    display: none;
+}
+html, body {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+}
+.main-section {
+    overflow: hidden !important;
+    width: 100%;
+    height: auto;
+    background: url("assets/the-strangers-background-desktop-home-ent.jpg") no-repeat;
+    background-position: cover;
+    background-size: max(1000px, 100%);
+    position: relative;
+    
+}
+nav {
+    position: fixed;
+    top: o;
+    width: 100%;
+    height: 85px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px auto;
+    z-index: 2;
+}
+nav .logo {
+    margin-left: 140px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 150px;
+    top: 34px;
+    z-index: 2;
+}
+
+ul li {
+    list-style: none;
+    color: #EFD7AD;
+    padding-left: 30px;
+    font-family: Poppins;
+    font-size: 14px;
+}
+
+.containerContent {
+    
+    width: 100%;
+    height: 100vh;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.containerContent .title {
+    margin-top: 20%;
+    width: 50%;
+    height: 40%;
+}
+
+.title img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.containerContent button {
+    margin-top: 20px;
+    padding: 16px 45px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 40px;
+    border: none;
+    background-color: #76471E;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.containerContent button:hover {
+    background-color: #A36121;
+}
+
+.containerContent .flexLogo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-block: 20px;
+}
+
+.flexLogo .logo {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-block: 2px solid #A36121;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #FFD4A1;
+    padding-block: 10px;
+    padding-inline: 14px;
+}
+
+.flexLogo .logo img {
+    width: 30px;
+}
+
+
+.flexLogo .logo1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 10px;
+    padding-block: 14px;
+}
+
+.flexLogo .logo1  img {
+    width: 20px;
+    margin-left: 10px;
+}
+
+
+
+.flexLogo .logo2 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 10px;
+    padding-block: 12px;
+}
+
+.flexLogo .logo2  img {
+    width: 35px;
+    margin-left: 10px;
+}
+      /* SLIDES */
+
+.slides {
+    width: 100%;
+    min-height: 640px;
+    background-color: #000000;
+    overflow: hidden;
+}
+
+.slides .slider {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+    position: relative;
+
+}
+
+
+
+.sliderBox {
+    margin-right: 30px;
+    min-width: calc(90px * 10);
+    height: 100%;
+    position: relative;
+    animation: autoRun 12s linear infinite;
+    transition: all 0.1s linear;
+    
+
+}
+
+.sliderBox video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slides .slider .sliderBox img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.slides .slider:hover .sliderBox {
+    animation-play-state: paused !important;
+    
+}
+
+
+
+
+.slides .slider .sliderBox:hover img {
+    transition: all 0.1s linear;
+    opacity: 0;
+
+}
+
+@keyframes autoRun {
+    from {
+        right:100%;
+    }to {
+        right: calc(-100%);
+    }
+}
+ /* paracontent */
+
+.paracontent {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+    display: grid;
+    
+    padding-inline: 140px;
+    padding-block-end: 100px;
+    
+}
+
+.content1 h1 {
+    color: #FFE5BA;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.content1 h2 {
+    color: #8D685C;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.content2 h1 {
+    color: #FFE5BA;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.content2 h2 {
+    color: #8D685C;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.gridContent3 {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+
+}
+
+.gridContent3 .content h1 {
+    color: #FFE5BA;
+    text-decoration: underline;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.gridContent3 .content h2 {
+    color: #8D685C;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.content4 {
+    margin-top: 100px;
+}
+
+.content4 img {
+    margin-right: 40px;
+}
+
+/* DIGITAL BOOK */
+
+.digitalbook {
+    width: 100%;
+    min-height: 100vh;
+    background: url("assets/buy-now-the-strangers-chapter1-desktop-background.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentcontainer {
+    width: 80%;
+    height: 600px;
+
+}
+.contentcontainer h1{
+    width: 100%;
+    color: #FFE5A8;
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.contentcontainer .qualitycontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.qualitycontainer .book {
+    width: 25%;
+    height: 20%;
+}
+
+.book img {
+    width: 100%;
+    height: 100%;
+}
+
+.qualitycontainer .textcontainer {
+    width: 65%;
+    height: max-content;
+}
+
+.textcontainer h1 {
+    border-bottom: 1px solid #ffffffbe;
+    text-decoration: none;
+    padding-block: 23px;
+    font-size: 34px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 25px;
+    transition: all 0.2s linear;
+}
+
+.textcontainer h1 button {
+    padding: 10px 50px;
+    border-radius: 40px;
+    border: 1px solid #ffffffbe;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    transition: all 0.2s linear;
+}
+
+.textcontainer h1:hover {
+    background-color: #ffffff18;
+}
+
+.textcontainer h1:hover button {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* ANIMATED SLIDER */
+.swiper {
+    width: 100vw;
+    height: 90vh;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 30%;
+    height: 100%;
+    
+}
+
+
+/* footer */
+
+footer {
+    background-color: #111111;
+    color: #fff;
+    display: grid;
+    padding-inline: 20px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+
+
+}
+
+footer > img {
+    margin: 0 auto;
+    width: 90%;
+}
+
+footer .footer-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 90%;
+    margin: 0 auto;
+    padding-inline: 20px;
+}
+
+.footer-flex p {
+    font-size: 15px;
+    font-weight: 500;
+    
+}
+
+.footer-flex span {
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-left: 6px;
+}
